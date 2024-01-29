@@ -1,0 +1,189 @@
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../html/img/mountains.png");
+    background-size: cover;
+    background-position: center;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.logo {
+    width: 140px;
+    cursor: pointer;
+}
+
+
+.nav-links li {
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+    font-size: 16px;
+ }
+ .nav-links li a {
+     text-decoration: none;
+     color: rgb(157,152,192);
+ }
+
+.register-btn {
+    background: rgb(157,152,192);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 160px;
+}
+
+.container {
+    padding: 0 7%;
+
+}
+.header h1 {
+    font-size: 4vw;
+    font-weight: 500;
+    color: rgb(157,152,192);
+    text-align: center;
+    padding-top: 10%;
+}
+
+.search-bar {
+    background-color: white;
+    width: 70%;
+    margin: 15% auto;
+    padding: 6px 10px 6px 30px;
+    border-radius: 50px;
+}
+
+.search-bar-form {
+    padding-right: 0;
+}
+.search-bar form {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-right: -1000px;
+}
+
+.search-bar form input {
+    display: block;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding-right: ;
+}
+.search-bar form button {
+    background-color: rgb(157,152,192);
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-bar form button img {
+    width: 15px;
+    margin-top: 7px;
+
+}
+
+.location-input {
+    flex: 1;
+}
+
+.search-bar form label {
+    font-weight: 600;
+}
+
+.column-1 {
+    display: grid;
+    
+}
+
+.mobile-nav-toggle {
+    display: none;
+}
+
+@media (max-width: 50em) {
+    .primary-navigation {
+        display: none;
+
+        
+        inset: var(--size-900) var(--size-900);
+        background-color: white;
+        
+    }
+
+    .nav-links {
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+    .primary-navigation[data-visible] {
+        display: block;
+    }
+
+    .mobile-nav-toggle {
+    display: block;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    padding: 0.5em;
+    padding-left: 90%;
+    padding-top: 3%;
+    
+    }
+
+    .mobile-nav-toggle .icon-close {
+    display: none;
+    height: 40px;
+    width: auto;
+    }
+    .register-btn {
+        margin-right: 155px;
+    }
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    white-space:  nowrap;
+    border: 0;
+}
+
+.icon-hamburger{
+    height: 40px;
+    width: auto;
+}
+
+
+.opened {
+    display: block;
+    position: fixed;
+}
