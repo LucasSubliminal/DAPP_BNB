@@ -37,7 +37,7 @@
 
 .search-bar {
     background-color: rgb(255,255,255, 70%);
-    width: auto;
+    width: 80%;
     margin: 15% auto;
     padding: 6px 10px 6px 30px;
     border-radius: 50px;
@@ -414,15 +414,7 @@ main h1 {
     padding-top: 10px;
 }
 
-.benefits-columns {
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    padding-top: 80px;
-    padding-left: 251px;
-    padding-right: 251px;
-    margin-left: 80px
-    
-}
+
 
 .images {
     grid-template-rows:20% ;
@@ -441,10 +433,7 @@ main h1 {
 .image .image-1 p {
     padding-top: ;
 }
-.benefits-columns p {
-    padding-right: 80px;
 
-}
 
 .listings {
     padding-top: 100px;
@@ -582,6 +571,16 @@ main h1 {
         transform: translate(-50%, 50%);
         background-color: rgb(246,196,197);
     }
+    .benefits-columns {
+       display: grid;
+       grid-template-rows: 5;
+       padding-top: 30px;
+       position:relative;
+       
+    }    
+    .benefits-columns .image p {
+        
+    }
 }
 
 
@@ -629,6 +628,14 @@ main h1 {
         font-size: 20px;
         margin-left: 160px;
     }
+    .benefits-columns {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        padding-top: 80px;
+        padding-left: 251px;
+        padding-right: 251px;
+        margin-left: 80px
+        
     
 }
 
