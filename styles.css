@@ -469,7 +469,7 @@ main h1 {
         
        
         gap: 1.5rem;
-        grid-template-rows: 50% 50%;
+
     
     
         
@@ -620,16 +620,25 @@ main h1 {
 
 @media (max-width: 915px)  {
     
+   
+    .section-container h2 {
+        font-size: 1.8rem;
+    }
+    .section-container p {
+        font-size: 2vh;
+        padding-bottom: 20px;
+    }
+
+    .section-container {
     
-.section-container {
-    margin-top: 0px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    padding: 1.5rem;
+        display: flex;
+        flex-wrap:wrap;
+       
+        padding: 1.5rem;
     
    
     gap: 1.5rem;
-    grid-template-rows: 50% 50%;
+
 
 
     
